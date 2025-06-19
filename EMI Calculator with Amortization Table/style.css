@@ -1,0 +1,101 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.emi-calculator {
+    background: #fff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 32px 24px 24px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #3b5998;
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: #222;
+    font-weight: 500;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #cfd8dc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 10px;
+    background: #4267b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: #365899;
+}
+
+#emiResult {
+    margin: 24px 0 18px 0;
+    text-align: center;
+    font-size: 1.1em;
+    color: #222;
+    font-weight: 500;
+}
+
+#amortization {
+    overflow-x: auto;
+    max-height: 340px;
+}
+
+#amortization table {
+    width: 100%;
+    min-width: 540px;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+#amortization th, #amortization td {
+    padding: 8px 6px;
+    text-align: right;
+    border: 1px solid #e0e0e0;
+    font-size: 0.97em;
+}
+
+#amortization th {
+    background: #e8eaf6;
+    color: #3b5998;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+}
+
+@media (max-width: 600px) {
+    .emi-calculator {
+        padding: 14px 4px;
+    }
+
+    #amortization table {
+        min-width: 440px;
+        font-size: 0.92em;
+    }
+}
